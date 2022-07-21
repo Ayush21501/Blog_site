@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	
+	<class name="Vo.postVo" table="post">
+	
+		<id name="sid" type="int" column="sid">
+			<generator class="increment"/>
+		</id>
+
+		<property name="title">
+			<column name="title"/>
+		</property>
+		
+		<property name="subtitle">
+			<column name="subtitle"/>
+		</property>
+		
+		<property name="aboutpost">
+			<column name="aboutpost"/>
+		</property>
+		
+		<property name="senderName">
+			<column name="senderName"/>
+		</property>
+		
+		<property name="date">
+			<column name="date"/>
+		</property>
+		
+		
+		
+				
+	</class>
+
+</hibernate-mapping>
